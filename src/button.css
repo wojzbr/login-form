@@ -1,0 +1,29 @@
+.button {
+    margin: 10px;
+    width: 200px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.buttonFilled {
+    background: var(--accent);
+    color: white;
+    border: none;
+}
+.buttonEmpty {
+    background: white;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+}
+.buttonOverlay {
+    height: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+.buttonOverlay:hover {
+    background: rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 5px;
+}
