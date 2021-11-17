@@ -1,0 +1,23 @@
+#pageContentWrapper {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+    min-height: calc(100% - 80px);
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#columnArticle {
+    background: white;
+    width: 100%;
+    padding: 50px;
+    border-radius: 5px;
+    
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+}
+#columnUser {
+    width: 300px;
+    margin-left: 20px;
+}

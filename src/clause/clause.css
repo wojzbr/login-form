@@ -1,0 +1,11 @@
+#clause {
+    position: absolute;
+    bottom: 0px;
+    margin: 10px;
+    font-size: 10px;
+  }
+  #clause a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--accent)
+  }
