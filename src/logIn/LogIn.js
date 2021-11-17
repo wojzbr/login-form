@@ -14,7 +14,7 @@ const LogIn = () => {
             <label for="password"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="password" required />
 
-            <button type="submit" className="button buttonFilled">Login</button>
+            <button type="submit" className="button buttonFilled">LOGIN</button>
             <label>
                 <input type="checkbox" name="remember" /> Remember me
             </label>
