@@ -6,8 +6,9 @@ const Navbar = () => {
     return(
         <div id="navbarWrapper">
             <LoggedUser />
-            <Button buttonText="LOGIN" />
-            <Button buttonText="CREATE ACCOUNT" filled={true}/>
+            <Button link="/" buttonText="HOME" filled={true}/>
+            <Button link="/login" buttonText="LOGIN" />
+            <Button link="/signin" buttonText="CREATE ACCOUNT" filled={true}/>
         </div>
     )
 }

@@ -14,6 +14,5 @@
     height: 150px;
     margin: auto;
     border-radius: 75px;
-    border: 1px solid var(--accent);
     display: flex;
 }

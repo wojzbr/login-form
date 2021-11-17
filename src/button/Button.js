@@ -1,15 +1,13 @@
 import './button.css'
+import { BrowserRouter as Router, Link } from "react-router-dom"
 
-const Button = ({buttonText, onClick, filled=false}) => {
+const Button = ({buttonText, link, filled=false}) => {
     return (
-            <button className={`button ${filled?"buttonFilled":"buttonEmpty"}`} onClick={(e)=>{
-                e.preventDefault();
-                onClick();
-            }}>
-                <div className="buttonOverlay">
-                    {buttonText}
-                </div>
-            </button>
+                <Link className={`button ${filled?"buttonFilled":"buttonEmpty"}`} to={link} >
+                    <div className="buttonOverlay">
+                        {buttonText}
+                    </div>
+                </Link>
     )
 }
 

@@ -1,0 +1,26 @@
+#logInForm {
+    width: 400px;
+    border: 1px solid var(--accent);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+    border-radius: 5px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+#logInUserPhoto {
+    width: 150px;
+    height: 150px;
+}
+#logInForm input[type="text"], #logInForm input[type="password"]{
+    width: 200px;
+    height: 40px;
+    padding: 0 10px;
+}
+#logInForm button[type="submit"] {
+    margin: 0 0 10px 0;
+}
+#logInForm>* {
+    margin-bottom: 10px;
+}

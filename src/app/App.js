@@ -1,14 +1,27 @@
 import './App.css';
-import Clause from '../clause/Clause';
 import Navbar from '../navbar/Navbar';
 import PageContent from '../pageContent/PageContent';
+import LogIn from '../logIn/LogIn'
+import SignIn from '../signIn/SignIn'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Redirect
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Navbar />
-      <PageContent />
-    </div>
+      <div className="App">
+          <Routes>
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/login" element={<LogIn />} />
+            <Route exact path="/" element={<PageContent />} />
+          </Routes>
+      </div>
+    </Router>
   );
 }
 
