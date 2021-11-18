@@ -1,9 +1,8 @@
 #authorCardWrapper {
     width: 100%;
-    height: 400px;
-    padding: 20px;
+    height: 300px;
+    padding: 30px;
     background: white;
-    margin-top: calc(100vh - 500px);
     border-radius: 5px;
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -15,4 +14,28 @@
     margin: auto;
     border-radius: 75px;
     display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    #authorCardWrapper {
+        height: auto;
+        display: flex;
+        padding-bottom: 0;
+    }
+    #authorPhoto {
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+    #authorCardWrapper {
+        height: auto;
+        display: flex;
+        padding-bottom: 0;
+        border-radius: 0;
+    }
+    #authorPhoto {
+        width: 80px;
+        height: 80px;
+        margin: 0;
+    }
 }

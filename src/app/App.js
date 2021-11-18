@@ -3,6 +3,7 @@ import Navbar from '../navbar/Navbar';
 import PageContent from '../pageContent/PageContent';
 import LogIn from '../logIn/LogIn'
 import SignIn from '../signIn/SignIn'
+import Footer from '../Footer'
 import {
   BrowserRouter as Router,
   Routes,
@@ -20,6 +21,7 @@ function App() {
             <Route path="/login" element={<LogIn />} />
             <Route exact path="/" element={<PageContent />} />
           </Routes>
+          <Footer />
       </div>
     </Router>
   );

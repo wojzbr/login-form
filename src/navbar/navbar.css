@@ -8,3 +8,19 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
     z-index: 10;
 }
+#buttonsWrapper {
+    display: flex;
+}
+#burgerMenuWrapper {
+    padding: 10px;
+    color: var(--accent);
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    #buttonsWrapper {
+        display: none;
+    }
+    #burgerMenuWrapper {
+        display: flex;
+    }
+}

@@ -11,24 +11,20 @@ const PageContent = () => {
                 <div>
                     {text}{text}{text}
                 </div>
-                <h1>TITLE</h1>
                 <h2>SUBTITLE</h2>
                 <div>
                     {text}{text}{text}
                 </div>
-                <h1>TITLE</h1>
                 <h2>SUBTITLE</h2>
                 <div>
                     {text}{text}{text}
                 </div>
-                <h1>TITLE</h1>
                 <h2>SUBTITLE</h2>
                 <div>
                     {text}{text}{text}
                 </div>
             </div>
-      <Clause />
-            <div id="columnUser">
+            <div id="columnAuthor">
                 <UserCard />
             </div>
         </div>

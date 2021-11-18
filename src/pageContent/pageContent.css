@@ -3,7 +3,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     min-height: calc(100% - 20px);
     height: auto;
     display: flex;
@@ -14,10 +14,36 @@
     width: 100%;
     padding: 50px;
     border-radius: 5px;
-    
+    line-height: 1.8rem;;
     box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
 }
-#columnUser {
+#columnArticle h1 {
+    color: var(--accent);
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+#columnArticle h2 {
+    margin: 20px 0 10px 0;
+}
+#columnAuthor {
     width: 300px;
     margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #pageContentWrapper {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+    #pageContentWrapper>* {
+        border-radius: 0;
+    }
+    #columnArticle {
+        padding: 30px;
+    }
+    #columnAuthor {
+        width: 100%;
+        margin: 0;
+    }
+
 }
