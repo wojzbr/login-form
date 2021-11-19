@@ -1,6 +1,12 @@
 import './logIn.css'
 import photoPlaceholder from '../media/photoPlaceholder.png'
-const LogIn = () => {
+import {Navigate} from 'react-router-dom'
+const LogIn = ({ setIsAuthenticated }) => {
+    
+    const authenticate = () => {
+        setIsAuthenticated(true)
+    }
+
     return (
         <form id="logInForm">
 
@@ -14,7 +20,7 @@ const LogIn = () => {
             <label for="password"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="password" required />
 
-            <button type="submit" className="button buttonFilled">LOGIN</button>
+            <button type="submit" className="button buttonFilled" onClick={()=>authenticate()}>LOGIN</button>
             <label>
                 <input type="checkbox" name="remember" /> Remember me
             </label>

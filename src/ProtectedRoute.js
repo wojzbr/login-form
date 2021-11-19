@@ -1,19 +1,10 @@
 import React from 'react';
 import { Navigate, Route } from 'react-router-dom';
-import { Fragment } from 'react/cjs/react.production.min';
+import { useAuth } from 'react';
 
-const ProtectedRoute = ({ component }) => {
-    const isAuthenticated = localStorage.getItem("isAuthenticated");
-    console.log("this", isAuthenticated);
+function ProtectedRoute({ isAuthenticated, children }) {
+    // READ ABOUT useAuth() !
+    return isAuthenticated ? children : <Navigate to="/login-form/login" />;
+  }
 
-    return (
-        <Route
-            exact path="/protected"
-            element={
-                isAuthenticated ? component : <Navigate to="/login" />
-            }
-        />
-    )
-}
-
-export default ProtectedRoute;
+export default ProtectedRoute
