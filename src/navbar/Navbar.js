@@ -8,9 +8,9 @@ const Navbar = () => {
         <div id="navbarWrapper">
             <LoggedUser />
             <div id="buttonsWrapper">
-                <Button link="/" buttonText="HOME" filled={true}/>
-                <Button link="/login" buttonText="LOGIN" />
-                <Button link="/signin" buttonText="CREATE ACCOUNT" filled={true}/>
+                <Button link="/login-form/" buttonText="HOME" filled={true}/>
+                <Button link="/login-form/login" buttonText="LOGIN" />
+                <Button link="/login-form/signin" buttonText="CREATE ACCOUNT" filled={true}/>
             </div>
             <div id="burgerMenuWrapper">
                 <AiOutlineMenu size={40}/>

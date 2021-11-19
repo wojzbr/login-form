@@ -17,9 +17,9 @@ function App() {
       <Navbar />
       <div className="App">
           <Routes>
-            <Route path="/signin" element={<SignIn />} />
-            <Route path="/login" element={<LogIn />} />
-            <Route exact path="/" element={<PageContent />} />
+            <Route path="/login-form/signin" element={<SignIn />} />
+            <Route path="/login-form/login" element={<LogIn />} />
+            <Route exact path="/login-form/" element={<PageContent />} />
           </Routes>
           <Footer />
       </div>
