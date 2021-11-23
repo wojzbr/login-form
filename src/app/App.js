@@ -15,10 +15,12 @@ import Footer from '../Footer'
 import ProtectedRoute from '../ProtectedRoute';
 
 function App() {
+
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+
   return ( 
     <Router>
-      <Navbar />
+      <Navbar isAuthenticated={isAuthenticated} />
       <div id="app">
           <Routes>
             <Route path="/login-form/signin" element={<SignIn />} />

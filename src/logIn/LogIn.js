@@ -8,7 +8,7 @@ const LogIn = ({ setIsAuthenticated }) => {
 
     const authenticate = () => {
         if (document.getElementById("logInUsername").value === "user" && document.getElementById("logInPassword").value === "pass"){
-            setIsAuthenticated(true)
+            setIsAuthenticated({name: "Wojciech"})
             navigate('/login-form/protected', {replace: true});
         }
         else alert ("Wrong credentials")
