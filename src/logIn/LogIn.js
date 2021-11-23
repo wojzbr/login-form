@@ -1,10 +1,17 @@
 import './logIn.css'
 import photoPlaceholder from '../media/photoPlaceholder.png'
-import {Navigate} from 'react-router-dom'
+import {Navigate, useNavigate} from 'react-router-dom'
+
 const LogIn = ({ setIsAuthenticated }) => {
     
+    let navigate = useNavigate();
+
     const authenticate = () => {
-        setIsAuthenticated(true)
+        if (document.getElementById("logInUsername").value === "user" && document.getElementById("logInPassword").value === "pass"){
+            setIsAuthenticated(true)
+            navigate('/login-form/protected', {replace: true});
+        }
+        else alert ("Wrong credentials")
     }
 
     return (
@@ -15,10 +22,10 @@ const LogIn = ({ setIsAuthenticated }) => {
             </div>
 
             <label for="username"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="username" required />
+            <input type="text" placeholder="Enter Username" name="username" id="logInUsername" required />
 
             <label for="password"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required />
+            <input type="password" placeholder="Enter Password" name="password" id="logInPassword" required />
 
             <button type="submit" className="button buttonFilled" onClick={()=>authenticate()}>LOGIN</button>
             <label>
