@@ -19,7 +19,7 @@ function App() {
   return ( 
     <Router>
       <Navbar />
-      <div className="App">
+      <div id="app">
           <Routes>
             <Route path="/login-form/signin" element={<SignIn />} />
             <Route path="/login-form/login" element={<LogIn setIsAuthenticated={setIsAuthenticated}/>} />

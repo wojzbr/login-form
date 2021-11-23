@@ -31,7 +31,6 @@
         height: auto;
         display: flex;
         padding-bottom: 0;
-        border-radius: 0;
     }
     #authorPhoto {
         width: 80px;

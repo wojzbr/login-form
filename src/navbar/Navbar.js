@@ -5,6 +5,12 @@ import LoggedUser from '../loggedUser/LoggedUser';
 import { AiOutlineMenu } from 'react-icons/ai'
 
 const Navbar = () => {
+
+    useEffect(()=>{
+        document.getElementById("app").addEventListener("touchend", ()=>{
+            document.getElementById("buttonsWrapper").style.right="-70vw"
+        })
+    },[])
     
     return(
         <div id="navbarWrapper">
