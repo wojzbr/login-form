@@ -8,7 +8,7 @@ const LogIn = ({ setIsAuthenticated }) => {
     }
 
     return (
-        <form id="logInForm">
+        <form className="logSignForm" id="logInForm">
 
             <div id="logInUserPhoto">
                 <img src={photoPlaceholder} alt="random user avatar" />

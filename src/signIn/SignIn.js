@@ -17,7 +17,7 @@ const SignIn = () => {
     }
 
     return (
-        <form id="logInForm">
+        <form className="logSignForm" id="signInForm">
             <label for="email"><b>Email</b></label>
             <input type="email" placeholder="Enter email" name="email" id="signInEmail" required />
 

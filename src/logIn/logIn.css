@@ -1,7 +1,6 @@
-#logInForm {
+.logSignForm {
     width: 400px;
-    border: 1px solid var(--accent);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+    box-shadow: 0 0 10px darkgray;
     border-radius: 5px;
     background: white;
     display: flex;
@@ -22,6 +21,18 @@ button[type="submit"] {
     margin: 0 0 10px 0;
     width: 250px;
 }
-#logInForm>* {
+.logSignForm>* {
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+@media only screen and (max-width: 480px) {
+    .logSignForm {
+        width: 100%;
+        height: calc(100vh - 60px);
+        border: none;
+        border-radius: 0;
+    }
 }
